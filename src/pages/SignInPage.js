@@ -1,32 +1,13 @@
-import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
+import SignInForm from "../components/SignInForm";
+import { Link } from "react-router-dom";
 
 export default function SignInPage(){
-    const auth = getAuth();
    
-
-    function signIn(event){
-      
-        event.preventDefault();
-        const email = event.target.email.value;
-        const password = event.target.password.value;
-signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    console.log(user);
-  })
-}
-
     return (
-        <div>
-            Hej
-            <form onSubmit={signIn}>
-                <label>E-mail</label>
-                <input type="text" name="email" id="email" placeholder="Indtast din e-mail"></input>
-                <label>Password</label>
-                <input type="password" name="password" id="password" placeholder="Indtast dit password"></input>
-                <button>Log Ind</button>
-            </form>
-        </div>
+        <main>
+        <h1>Log ind</h1>
+  <SignInForm/>
+   <div> Har du ikke en bruger? <Link to="/opret-bruger">Opret en her</Link></div>
+   </main>
     )
 }
