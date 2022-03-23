@@ -1,5 +1,5 @@
 export default function HomePage(){
     return(
-        <div>Hjemmesiden</div>
+        <div className="homepage">Hjemmesiden</div>
     )
 }

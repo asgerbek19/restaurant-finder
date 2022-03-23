@@ -6,10 +6,12 @@ import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
 import ResultsPage from "./pages/ResultsPage";
 import PreferencePage from "./pages/PreferencePage";
+import BestRatedPage from "./pages/BestRatedPage";
+import RestaurantPage from "./pages/RestaurantPage";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { usersRef } from "./firebase-config";
 import { useState } from "react";
-import BestRatedPage from "./pages/BestRatedPage";
+
 
 function App() {
    const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -32,6 +34,7 @@ function App() {
             <Route path="/preferencer" element={<PreferencePage />} />
             <Route path="/resultater" element={<ResultsPage />} />
             <Route path="/bedst-bedomte" element={<BestRatedPage/>}/>
+            <Route path="/restaurant/:id" element={<RestaurantPage/>}/>
             <Route path="*" element={<Navigate to="/" />} />
          </Routes>
       </>

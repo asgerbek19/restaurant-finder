@@ -8,22 +8,20 @@ export default function ResultCard({ restaurant }) {
 
    
     function handleClick() {
-        navigate(`resultater/${restaurant.name}`)
+        navigate(`restaurant/${restaurant.id}`);
     }
     
    
     
-
-    
     return(
         <div className="Results">
-        <div className="ResultCard">
+        <div className="ResultCard"></div>
             <h2>{restaurant.name}</h2>
             <p>{restaurant.desc}</p>
             <button onClick={handleClick}>Læs mere</button>
-            <img src="#" alt="Bedømmelse" />
+            <img src={restaurant.image} alt={restaurant.name} />
         </div>
-        </div>
+        
     )
 
   

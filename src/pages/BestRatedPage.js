@@ -1,5 +1,5 @@
 export default function BestRated (){
         return (
-                <div></div>
+                <div className="bestratedpage"></div>
         );
 }
