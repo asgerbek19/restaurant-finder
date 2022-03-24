@@ -16,7 +16,6 @@ signInWithEmailAndPassword(auth, email, password)
 }
 return(
     <div>
-    Hej
     <form onSubmit={signIn}>
         <label>E-mail</label>
         <input type="text" name="email" id="email" placeholder="Indtast din e-mail"></input>

@@ -1,2 +1,34 @@
 .onboarding {
+  background-color: #fcbf54;
+  height: 100vh;
+  h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  .btn-flex {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    background-color: rgba(148, 32, 23, 1);
+    margin: 2%;
+    padding: 2%;
+    width: 25%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  button {
+    background-color: rgba(148, 32, 23, 1);
+    margin: 2%;
+    padding: 2%;
+    width: 25%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+  }
 }

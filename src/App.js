@@ -1,4 +1,5 @@
 import "./css/style.css";
+import onboardingbackground from "./images/onboardingbackground.png"
 import { Routes, Route, Navigate } from "react-router-dom";
 import Nav from "./components/Nav";
 import HomePage from "./pages/HomePage";
@@ -11,6 +12,7 @@ import RestaurantPage from "./pages/RestaurantPage";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { usersRef } from "./firebase-config";
 import { useState } from "react";
+import WelcomePage from "./pages/WelcomePage";
 
 
 function App() {
@@ -43,6 +45,7 @@ function App() {
    const publicRoutes = (
       <>
          <Routes>
+            <Route path="/" element={<WelcomePage/>}/>
             <Route path="/log-ind" element={<SignInPage />} />
             <Route path="/opret-bruger" element={<SignUpPage />} />
             <Route path="*" element={<Navigate to="log-ind" />} />

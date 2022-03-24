@@ -1,0 +1,31 @@
+.ResultCard {
+  h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  p {
+    margin: 0.25em;
+    text-align: center;
+  }
+  img {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+  }
+  button {
+    background-color: rgba(148, 32, 23, 1);
+    margin: 2%;
+    padding: 2%;
+    width: 25%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+  }
+  .btnandimage {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+}
