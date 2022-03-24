@@ -1,14 +1,68 @@
-.onboarding {
-  background-color: #fcbf54;
-  height: 100vh;
+html {
+  margin: 0;
+  height: 100%;
+  background-color: black;
 }
 
-.onboarding h1 {
-  font-size: 3em;
+h1 {
+  font-family: rustica, sans-serif;
+  color: white;
+}
+
+h2 {
+  font-family: rustica, sans-serif;
+  color: white;
+}
+
+h3 {
+  font-family: rustica, sans-serif;
+  color: white;
+}
+
+p {
+  font-family: rustica, sans-serif;
+  color: white;
+}
+
+button {
+  background-color: #942017;
+  margin: 2%;
+  padding: 2%;
+  width: 25%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+
+.btn {
+  background-color: #942017;
+  font-family: rustica, sans-serif;
+  margin: 2%;
+  padding: 2%;
+  width: 25%;
+  color: white;
+  text-decoration: none;
   text-align: center;
 }
 
-.onboarding .btn-flex {
+.welcomepage {
+  width: 100%;
+  height: 100%;
+  background: url("../images/welcomepagebackground.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.welcomepage .welcomepagelogo {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.welcomepage .btn-flex {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -25,15 +79,107 @@
           align-items: center;
 }
 
-.onboarding button {
+.homepage {
+  width: 100%;
+  height: 100%;
+  background: url(../images/homepagebackground.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.homepage .munchologo {
+  width: 75%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.onboarding {
   background-color: #942017;
+  height: 100vh;
+}
+
+.onboarding h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.onboarding .onboardinglogo {
+  width: 75%;
+}
+
+.onboarding button {
+  font-family: rustica, sans-serif;
+  background-color: #fff;
   margin: 2%;
   padding: 2%;
   width: 25%;
-  color: white;
+  color: black;
   text-decoration: none;
   text-align: center;
   border: none;
+}
+
+.onboarding form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: rustica, sans-serif;
+  color: white;
+}
+
+.onboarding input[type="text"],
+.onboarding select {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.onboarding input[type="password"],
+.onboarding select {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.resultspage {
+  width: 100%;
+  background: url(../images/welcomepagebackground.png);
+  background-size: contain;
+  background-position: top;
+  min-height: 100%;
+  position: relative;
+}
+
+.restaurantpage {
+  width: 100%;
+  height: 100%;
+  background: url("../images/restaurantbackground.png");
+  background-size: cover;
+  background-position: top;
+  min-height: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .restaurantpage .restaurantimage {
@@ -52,33 +198,8 @@
   margin-bottom: 0;
 }
 
-html {
-  background-color: #fcbf53;
-}
-
-button {
-  background-color: #942017;
-  margin: 2%;
-  padding: 2%;
-  width: 25%;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border: none;
-}
-
-.btn {
-  background-color: #942017;
-  margin: 2%;
-  padding: 2%;
-  width: 25%;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-
 .ResultCard {
-  background-color: #a27b36;
+  background: black(0.5);
 }
 
 .ResultCard h2 {

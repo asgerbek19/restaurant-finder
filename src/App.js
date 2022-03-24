@@ -17,6 +17,7 @@ import WelcomePage from "./pages/WelcomePage";
 function App() {
    const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
    const auth = getAuth();
+  
    onAuthStateChanged(auth, (user) => {
       if (user) {
          setIsAuth(true);
@@ -29,8 +30,7 @@ function App() {
 
    // variable holding all private routes including the nav bar
    const privateRoutes = (
-      <>
-         <Nav />
+      <div>
          <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/preferencer" element={<PreferencePage />} />
@@ -39,7 +39,8 @@ function App() {
             <Route path="/restaurant/:slug" element={<RestaurantPage/>}/>
             <Route path="*" element={<Navigate to="/" />} />
          </Routes>
-      </>
+         <Nav />
+      </div>
    );
    // variable holding all public routes without nav bar
    const publicRoutes = (

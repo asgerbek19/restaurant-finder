@@ -1,5 +1,23 @@
 html {
-  background-color: #fcbf53;
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+h1 {
+  font-family: rustica, sans-serif;
+  color: white;
+}
+h2 {
+  font-family: rustica, sans-serif;
+  color: white;
+}
+h3 {
+  font-family: rustica, sans-serif;
+  color: white;
+}
+p {
+  font-family: rustica, sans-serif;
+  color: white;
 }
 button {
   background-color: rgba(148, 32, 23, 1);
@@ -13,6 +31,7 @@ button {
 }
 .btn {
   background-color: rgba(148, 32, 23, 1);
+  font-family: rustica, sans-serif;
   margin: 2%;
   padding: 2%;
   width: 25%;

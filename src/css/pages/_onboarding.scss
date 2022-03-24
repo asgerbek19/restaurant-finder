@@ -1,26 +1,49 @@
 .onboarding {
-  background-color: #fcbf54;
+  background-color: #942017;
   height: 100vh;
   h1 {
     font-size: 3em;
     text-align: center;
   }
-  .btn-flex {
-    display: inline-flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  .onboardinglogo {
+    width: 75%;
   }
-
   button {
-    background-color: rgba(148, 32, 23, 1);
+    font-family: rustica, sans-serif;
+    background-color: #fff;
     margin: 2%;
     padding: 2%;
     width: 25%;
-    color: white;
+    color: black;
     text-decoration: none;
     text-align: center;
     border: none;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: rustica, sans-serif;
+    color: white;
+  }
+  input[type="text"],
+  select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="password"],
+  select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
 }

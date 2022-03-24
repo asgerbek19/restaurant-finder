@@ -1,13 +1,17 @@
+@import "./components/globals";
+
 //Pages
+@import "./pages/welcomepage";
+
 @import "./pages/homepage";
 
 @import "./pages/onboarding";
 
 @import "./pages/preferencepage";
 
+@import "./pages/resultspage";
+
 @import "./pages/restaurantpage";
 
 //Components
-@import "./components/globals";
-
 @import "./components/resultcard";
