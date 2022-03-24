@@ -5,6 +5,7 @@ import { restaurants } from "../steder";
 
 export default function PreferenceForm() {
     const [restaurant, setRestaurant] = useState([]);
+    console.log(restaurant);
     
     
     const [radio, setRadio] = useState("aarhus");
