@@ -10,10 +10,15 @@ export const restaurants = [
       image:"https://media-cdn.tripadvisor.com/media/photo-s/1a/dc/6e/a2/social-dining.jpg",
       slug:"syv-ni-13",
       address:"Frederiksgade 74, 8000 Aarhus",
-      openinghours: [{
+      openinghours: {
          monday: "17-00",
-         tuesday: "17-00"
-      }],
+         tuesday: "17-00",
+         wednesday: "17-00",
+         thursday:"17-00",
+         friday:"17-00",
+         saturday:"10-14 & 17-00",
+         sunday:"Lukket"
+      },
       id: "1"
    },
    {
@@ -26,7 +31,16 @@ export const restaurants = [
       image:"https://sua.dinnerbooking.eu/img/restaurants/2986/530x250/1631270589_741-2986-keyser-social-aarhus.jpg",
       slug:"keyser-social",
       address:"Frue Kirkeplads 4, 8000 Aarhus",
-      id: "2"
+      openinghours: {
+         monday: "17-21",
+         tuesday: "17-21",
+         wednesday: "17-21",
+         thursday:"17-22",
+         friday:"17-22",
+         saturday:"17-22",
+         sunday:"17-21"
+      },
+      id: "2",
    },
    {
       name: "Restaurant Nögen",
@@ -38,6 +52,15 @@ export const restaurants = [
       image:"https://usercontent.one/wp/www.restaurantnoegen.dk/wp-content/uploads/2022/03/IMG_0615-scaled.jpg?media=1644918691",
       slug:"restaurant-noegen",
       address:"Banegårdspladsen 4, St. th, 8000 Aarhus",
+      openinghours: {
+         monday: "Lukket",
+         tuesday: "11:30-23",
+         wednesday: "11:30-23",
+         thursday:"11:30-23",
+         friday:"11:30-02",
+         saturday:"11:30-02",
+         sunday:"Lukket"
+      },
       id: "3"
    },
    {
@@ -50,6 +73,15 @@ export const restaurants = [
       image:"https://olive.dk/wp-content/uploads/2020/08/CED2D835-D811-48CA-961B-9616AD8DE0C7-scaled.jpg",
       slug:"restaurant-olive",
       address:"Kaløgade 1, 8000 Aarhus",
+      openinghours: {
+         monday: "17:30-22",
+         tuesday: "17:30-22",
+         wednesday: "17:30-22",
+         thursday:"17:30-22",
+         friday:"17:30-23",
+         saturday:"17:30-23",
+         sunday:"Lukket"
+      },
       id: "4"
    },
    {
@@ -62,6 +94,15 @@ export const restaurants = [
       image:"https://www.cafepiaf.dk/wp-content/uploads/2022/03/Piaf1.jpg",
       slug:"cafe-piaf",
       address:"Jægergårdsgade 40, 8000 Aarhus",
+      openinghours: {
+         monday: "12-22",
+         tuesday: "12-22",
+         wednesday: "12-22",
+         thursday:"12-23:30",
+         friday:"12-23:30",
+         saturday:"11-23",
+         sunday:"Lukket"
+      },
       id: "5"
    },
    {
@@ -74,6 +115,15 @@ export const restaurants = [
       image:"https://media-cdn.tripadvisor.com/media/photo-s/18/b8/aa/16/love-s-bog-og-vincafe.jpg",
       slug:"loves-bog-og-vincafe",
       address:"Nørregade 32, 8000 Aarhus",
+      openinghours: {
+         monday: "09-22",
+         tuesday: "09-22",
+         wednesday: "09-22",
+         thursday:"09-00",
+         friday:"09-00",
+         saturday:"10-00",
+         sunday:"10-18"
+      },
       id: "6"
    },
    {
@@ -86,6 +136,15 @@ export const restaurants = [
       image:"https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/263434461_10159850911842812_3457983835068762075_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0debeb&_nc_ohc=I6f8Z5I8vL8AX9ZWn5S&_nc_ht=scontent-cph2-1.xx&oh=00_AT-xtkDKPPyHI_QJNtaoqmuiE9xs-my0jZR8uaTh-MfiGg&oe=62408B00",
       slug:"restaurant-mellemrum",
       address:"Fredens Torv 2, 8000 Aarhus",
+      openinghours: {
+         monday: "17-23",
+         tuesday: "17-23",
+         wednesday: "17-23",
+         thursday:"17-23",
+         friday:"17-23",
+         saturday:"17-23",
+         sunday:"Lukket"
+      },
       id: "7"
    },
    {
@@ -98,6 +157,15 @@ export const restaurants = [
       image:"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/e4/ac/ec/for-lokalet-med-den-karakteris.jpg?w=800&h=600&s=1",
       slug:"restaurant-ombord",
       address:"Jægergårdsgade 71, 8000 Aarhus",
+      openinghours: {
+         monday: "Lukket",
+         tuesday: "17-23",
+         wednesday: "17-23",
+         thursday:"17-23",
+         friday:"15-23",
+         saturday:"10-23",
+         sunday:"10-23"
+      },
       id: "8"
    },
    {
@@ -110,6 +178,15 @@ export const restaurants = [
       image:"https://files.guidedanmark.org/files/484/208034_Ret-Restaurant-Komfur-1.jpg?width=987",
       slug:"restaurant-komfur",
       address:"Guldsmedgade 38, 8000 Aarhus",
+      openinghours: {
+         monday: "17-23",
+         tuesday: "17-23",
+         wednesday: "17-23",
+         thursday:"17-23",
+         friday:"17-23",
+         saturday:"17-23",
+         sunday:"17-23"
+      },
       id: "9"
    },
    {
@@ -122,6 +199,15 @@ export const restaurants = [
       image:"https://spiseguidenaarhus.dk/wp-content/uploads/2021/09/Bardok-2-1024x768.jpg",
       slug:"bardok",
       address:"Åboulevarden 51, 8000 Aarhus",
+      openinghours: {
+         monday: "Lukket",
+         tuesday: "17-22",
+         wednesday: "17-22",
+         thursday:"17-22",
+         friday:"17-22",
+         saturday:"17-22",
+         sunday:"Lukket"
+      },
       id: "10"
    },
    {
@@ -134,6 +220,15 @@ export const restaurants = [
       image:"https://tapastreat.dk/wp-content/uploads/OM-TT-smag-og-dele-2.jpg",
       slug:"tapastreat",
       address:"Kastrupvej 110, 2300 København S",
+      openinghours: {
+         monday: "14-20",
+         tuesday: "14-20",
+         wednesday: "14-20",
+         thursday:"14-20",
+         friday:"14-20",
+         saturday:"10-14",
+         sunday:"Lukket"
+      },
       id:"11"
    },
    {
@@ -146,6 +241,15 @@ export const restaurants = [
       image:"https://usercontent.one/wp/www.al-diwan.dk/wp-content/uploads/2021/12/248975435_4562372517190237_2493968354136850973_n-1024x576.jpeg",
       slug:"al-diwan",
       address:"Vesterbrogade 94, 1620 København",
+      openinghours: {
+         monday: "17-23",
+         tuesday: "17-23",
+         wednesday: "17-23",
+         thursday:"17-23",
+         friday:"17-23",
+         saturday:"17-23",
+         sunday:"17-23"
+      },
       id: "12"
    },
    {
@@ -158,6 +262,15 @@ export const restaurants = [
       image:"https://australian.dk/File/113/family.jpg?width=590&stretchmode=UniformToMax&ticks=637562417250000000",
       slug:"australian-barbecue",
       address:"Østerbro 35, 9000 Aalborg",
+      openinghours: {
+         monday: "15-20:30",
+         tuesday: "15-20:30",
+         wednesday: "15-20:30",
+         thursday:"15-20:30",
+         friday:"15-20:30",
+         saturday:"15-20:30",
+         sunday:"15-20:30"
+      },
       id: "13"
    },
    {
@@ -170,6 +283,15 @@ export const restaurants = [
       image:"https://media-cdn.tripadvisor.com/media/photo-s/18/bb/00/8b/photo5jpg.jpg",
       slug:"ombord",
       address:"Bådehavnsvej 16A, 9000 Aalborg",
+      openinghours: {
+         monday: "11:30-22",
+         tuesday: "11:30-22",
+         wednesday: "11:30-22",
+         thursday:"11:30-22",
+         friday:"11:30-23",
+         saturday:"11:30-23",
+         sunday:"11:30-22"
+      },
       id:"14"
    },
    {
@@ -182,6 +304,15 @@ export const restaurants = [
       image:"https://www.ipupisiciliani.dk/wp-content/uploads/2019/06/hjemmeside-3.jpg",
       slug:"i-pupi-siciliana",
       address:"Vindegade 73, 5000 Odense",
+      openinghours: {
+         monday: "Lukket",
+         tuesday: "Lukket",
+         wednesday: "17:30-22",
+         thursday:"17:30-22",
+         friday:"17:30-22",
+         saturday:"17:30-22",
+         sunday:"17:30-22"
+      },
       id: "15"
    },
 ]

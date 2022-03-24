@@ -20,7 +20,9 @@ export default function ResultCard({ restaurant }) {
             <p>{restaurant.desc}</p>
             <div className="btnandimage">
             <button onClick={handleClick}>Læs mere</button>
+            <div className="restaurantimage">
             <img src={restaurant.image} alt={restaurant.name} />
+            </div>
             </div>
             </div>
         </div>

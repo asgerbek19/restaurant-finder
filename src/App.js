@@ -26,6 +26,7 @@ function App() {
          localStorage.removeItem("isAuth");
       }
    });
+
    // variable holding all private routes including the nav bar
    const privateRoutes = (
       <>
