@@ -50,6 +50,10 @@ html {
   background-color: #fcbf53;
 }
 
+.ResultCard {
+  background-color: #a27b36;
+}
+
 .ResultCard h2 {
   font-size: 2em;
   text-align: center;

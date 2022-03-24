@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function ResultsPage(){
     const [searchValue, setSearchValue] = useState("");
-    const filteredRestaurants = restaurants.filter(restaurant => restaurant.info.toLowerCase().includes(searchValue));
+    const filteredRestaurants = restaurants.filter(restaurant => restaurant.info.toLowerCase().includes(searchValue) || restaurant.name.toLowerCase().includes(searchValue) || restaurant.desc.toLowerCase().includes(searchValue));
 
     return(
         <div className="resultspage">

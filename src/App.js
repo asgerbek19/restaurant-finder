@@ -1,5 +1,4 @@
 import "./css/style.css";
-import onboardingbackground from "./images/onboardingbackground.png"
 import { Routes, Route, Navigate } from "react-router-dom";
 import Nav from "./components/Nav";
 import HomePage from "./pages/HomePage";
@@ -36,7 +35,7 @@ function App() {
             <Route path="/preferencer" element={<PreferencePage />} />
             <Route path="/resultater" element={<ResultsPage />} />
             <Route path="/bedst-bedomte" element={<BestRatedPage/>}/>
-            <Route path="/restaurant/:id" element={<RestaurantPage/>}/>
+            <Route path="/restaurant/:slug" element={<RestaurantPage/>}/>
             <Route path="*" element={<Navigate to="/" />} />
          </Routes>
       </>

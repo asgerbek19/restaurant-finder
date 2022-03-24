@@ -8,7 +8,7 @@ export default function ResultCard({ restaurant }) {
 
    
     function handleClick() {
-        navigate(`/restaurant/${restaurant.id}`);
+        navigate(`/restaurant/${restaurant.slug}`);
     }
     
    
