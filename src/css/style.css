@@ -97,6 +97,12 @@ button {
   left: 10%;
 }
 
+.homepage button {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+
 .onboarding {
   background-color: #942017;
   height: 100vh;
@@ -162,6 +168,14 @@ button {
           box-sizing: border-box;
 }
 
+.preferencepage {
+  background-color: white;
+}
+
+.preferencepage h2 {
+  color: black;
+}
+
 .resultspage {
   width: 100%;
   background: url(../images/welcomepagebackground.png);
@@ -199,7 +213,7 @@ button {
 }
 
 .ResultCard {
-  background: black(0.5);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .ResultCard h2 {

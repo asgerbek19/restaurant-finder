@@ -1,38 +1,69 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { restaurants } from "../steder";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 
 export default function PreferenceForm() {
-    const [restaurant, setRestaurant] = useState([]);
-    console.log(restaurant);
+    const [city, setCity] = useState("");
+    const navigate = useNavigate();
     
+    useEffect(() => {  
+        if (localStorage.getItem("city") === null) {
+        setCity("aarhus")
+          } else {
+            setCity(localStorage.getItem("city"))    
+          }
     
-    const [radio, setRadio] = useState("aarhus");
-    
-    
+  },[])
 
-    function handleSubmit(){
-
-        return;
+    const handleChange = (event) => {
+      setCity(event.target.value)
     }
-   
 
-    return(
+    function submitEvent(event){
+event.preventDefault();
+localStorage.setItem("city", city)
+navigate("/resultater");
+    }
+    return (
+      <form onSubmit={submitEvent} className="preferenceform">
+        <p>By</p>
         <div>
-            <h2>Vælg by</h2>
-            <form onClick={handleSubmit}>
-                <label>Aarhus</label><br/>
-                <input type="radio" checked={radio === "aarhus"} name="bynavn" value="aarhus" onChange={(event) =>{setRadio(event.target.value)}}/><br/>
-                <label>Odense</label><br/>
-                <input type="radio" checked={radio === "odense"} name="bynavn" value="odense" onChange={(event) =>{setRadio(event.target.value)}}/><br/>
-                <label>Aalborg</label><br/>
-                <input type="radio" checked={radio === "aalborg"} name="bynavn" value="aalborg" onChange={(event) =>{setRadio(event.target.value)}}/><br/>
-                <label>København</label><br/>
-                <input type="radio" checked={radio === "koebenhavn"} name="bynavn" value="koebenhavn" onChange={(event) =>{setRadio(event.target.value)}}/><br/>
-                <button></button>
-            </form>
+          <input
+            type="radio"
+            value="aarhus"
+            checked={city === 'aarhus'}
+            onChange={handleChange}
+          /> Aarhus
         </div>
+        <div>
+          <input
+            type="radio"
+            value="odense"
+            checked={city === 'odense'}
+            onChange={handleChange}
+          /> Odense
+        </div>
+        <div>
+          <input
+            type="radio"
+            value="aalborg"
+            checked={city === 'aalborg'}
+            onChange={handleChange}
+          /> Aalborg
+        </div>
+        <div>
+          <input
+            type="radio"
+            value="koebenhavn"
+            checked={city === 'koebenhavn'}
+            onChange={handleChange}
+          /> København
+        </div>
+        <button>Søg</button>
+      </form>
     )
+    
+
     
 }
