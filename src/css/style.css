@@ -4,6 +4,10 @@ html {
   background-color: black;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: rustica, sans-serif;
   color: white;
@@ -168,12 +172,91 @@ button {
           box-sizing: border-box;
 }
 
+.onboarding .userredirect {
+  font-family: rustica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.onboarding .userredirect a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-top: 2%;
+}
+
 .preferencepage {
-  background-color: white;
+  width: 100%;
+  background: url(../images/preferencebackground.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .preferencepage h2 {
-  color: black;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.preferencepage .preference-center {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+}
+
+.preferencepage .preferenceform {
+  display: table;
+  margin: 0 auto;
+}
+
+.preferencepage .radio-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: rustica, sans-serif;
+  font-size: 2em;
+}
+
+.preferencepage label {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.preferencepage input[type="radio"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  vertical-align: baseline;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 3px;
+}
+
+.preferencepage input[type="radio"]:checked {
+  background-color: #fff;
+}
+
+.preferencepage button {
+  display: block;
+  margin: 10% auto;
+  padding: 2% 15% 2% 15%;
+  width: inherit;
 }
 
 .resultspage {
@@ -183,6 +266,16 @@ button {
   background-position: top;
   min-height: 100%;
   position: relative;
+  padding-bottom: 60px;
+}
+
+.resultspage .searchbar-container {
+  text-align: center;
+}
+
+.resultspage .searchbar {
+  font-family: rustica, sans-serif;
+  margin: 0 auto;
 }
 
 .restaurantpage {
@@ -251,5 +344,29 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.navbar {
+  background-color: #942017;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar a {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar .active {
+  background-color: #b86433;
+}
+
+.navbar div {
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

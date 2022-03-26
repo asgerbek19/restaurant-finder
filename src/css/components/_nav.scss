@@ -1,0 +1,18 @@
+.navbar {
+  background-color: #942017;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  a {
+    width: 100%;
+    text-align: center;
+  }
+  .active {
+    background-color: #b86433;
+  }
+  div {
+    width: 100%;
+    text-align: center;
+  }
+}

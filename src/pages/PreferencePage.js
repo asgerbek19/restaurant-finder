@@ -12,8 +12,10 @@ export default function PreferencePage() {
   </g>
 </svg>
 </div>
-                <h2>Vælg by</h2>
+<div className="preference-center">
+                <h2>Vælg by:</h2>
                 <PreferenceForm />
+                </div>
                 </div>
         )
 }

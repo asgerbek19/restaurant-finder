@@ -1,5 +1,10 @@
 import { getAuth,signOut } from "firebase/auth";
 import { NavLink } from "react-router-dom";
+import homeicon from "../images/homeicon.png";
+import likeicon from "../images/likeicon.png";
+import staricon from "../images/staricon.png";
+import menu from "../images/menu.png"
+
 
 export default function Nav() {
         const auth = getAuth();
@@ -7,11 +12,11 @@ export default function Nav() {
                 signOut(auth);
         }
         return (
-                <nav>
-                        <NavLink to="/">HomePage</NavLink>
-                        <NavLink to="/gemte">Gemte</NavLink>
-                        <NavLink to="/bedst-bedomte">Bedst bedømte</NavLink>
-                        <button onClick={handleSignOut}>Log ud</button>
+                <nav className="navbar">
+                        <NavLink to="/"><img src={homeicon} alt="Home"/></NavLink>
+                        <NavLink to="/gemte"><img src={likeicon} alt="Home"/></NavLink>
+                        <NavLink to="/bedst-bedoemte"><img src={staricon} alt="Home"/></NavLink>
+                        <div onClick={handleSignOut}><img src={menu} alt="Home"/></div>
                 </nav>
         );
 } 

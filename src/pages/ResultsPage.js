@@ -6,9 +6,12 @@ import { useNavigate } from "react-router-dom";
 
 export default function ResultsPage(){
     const [searchValue, setSearchValue] = useState("");
-    //const filteredRestaurants = restaurants.filter(restaurants.filter(filteredRestaurant => filteredRestaurant.location.includes(localStorage.getItem("city"))));
-    const searchedRestaurants = restaurants.filter(restaurant => restaurant.info.toLowerCase().includes(searchValue) || restaurant.name.toLowerCase().includes(searchValue) || restaurant.desc.toLowerCase().includes(searchValue));
+    const filteredRestaurants = restaurants.filter(restaurant => restaurant.location.includes(localStorage.getItem("city")));
+    const searchedRestaurants= filteredRestaurants.filter(restaurant=> restaurant.info.toLowerCase().includes(searchValue) || restaurant.name.toLowerCase().includes(searchValue) || restaurant.desc.toLowerCase().includes(searchValue));
 const navigate = useNavigate();
+
+
+
     return(
         <div className="resultspage">
      <div onClick={() => navigate(-1)}><svg xmlns="http://www.w3.org/2000/svg" width="35" height="52" viewBox="0 0 35 52">

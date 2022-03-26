@@ -5,4 +5,12 @@
   background-position: top;
   min-height: 100%;
   position: relative;
+  padding-bottom: 60px;
+  .searchbar-container {
+    text-align: center;
+  }
+  .searchbar {
+    font-family: rustica, sans-serif;
+    margin: 0 auto;
+  }
 }
