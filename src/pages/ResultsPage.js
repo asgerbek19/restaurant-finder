@@ -14,7 +14,7 @@ export default function ResultsPage(){
 const navigate = useNavigate();
 
 useEffect(()=>{
-    const q = query(restaurantsRef, orderBy("name", "desc")); // order by: lastest post first
+    const q = query(restaurantsRef, orderBy("name")); // order by: name
     const unsubscribe = onSnapshot(q, data => {
         const restaurantsData = data.docs.map(doc => {
             // map through all docs (object) from post collection
