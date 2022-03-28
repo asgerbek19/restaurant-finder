@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import homeicon from "../images/homeicon.png";
 import likeicon from "../images/likeicon.png";
 import staricon from "../images/staricon.png";
-import menu from "../images/menu.png"
+import logout from "../images/logout.png"
 
 
 export default function Nav() {
@@ -16,7 +16,7 @@ export default function Nav() {
                         <NavLink to="/"><img src={homeicon} alt="Home"/></NavLink>
                         <NavLink to="/gemte"><img src={likeicon} alt="Home"/></NavLink>
                         <NavLink to="/bedst-bedoemte"><img src={staricon} alt="Home"/></NavLink>
-                        <div onClick={handleSignOut}><img src={menu} alt="Home"/></div>
+                        <div onClick={handleSignOut}><img src={logout} alt="Home"/></div>
                 </nav>
         );
 } 

@@ -19,3 +19,4 @@ const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
 
 export const usersRef = collection(db, "users");
+export const restaurantsRef = collection(db, "restaurants");

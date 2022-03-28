@@ -10,7 +10,7 @@ export default function HomePage(){
 
     return(
         <div className="homepage" >
-        <img src={logo} alt="Muncho Logo" className="munchologo"/>
+        <img src={logo} alt="Munch'o Logo" className="munchologo"/>
         <button onClick={handleNavigate}>Opdag</button>
         </div>
         

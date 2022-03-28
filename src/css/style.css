@@ -11,11 +11,13 @@ body {
 h1 {
   font-family: rustica, sans-serif;
   color: white;
+  text-align: center;
 }
 
 h2 {
   font-family: rustica, sans-serif;
   color: white;
+  text-align: center;
 }
 
 h3 {
@@ -50,6 +52,11 @@ button {
   text-align: center;
 }
 
+svg {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
 .welcomepage {
   width: 100%;
   height: 100%;
@@ -63,7 +70,10 @@ button {
 
 .welcomepage .welcomepagelogo {
   width: 75%;
-  margin: 0 auto;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .welcomepage .btn-flex {
@@ -102,9 +112,13 @@ button {
 }
 
 .homepage button {
+  width: 40%;
+  font-size: 1.4em;
   position: absolute;
-  left: 35%;
+  left: 28%;
   top: 40%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .onboarding {
@@ -119,6 +133,10 @@ button {
 
 .onboarding .onboardinglogo {
   width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .onboarding button {
@@ -287,10 +305,22 @@ button {
   min-height: 100%;
   height: 100vh;
   position: relative;
+  padding-bottom: 65px;
+  overflow: scroll;
 }
 
 .restaurantpage .restaurantimage {
   height: 10vh;
+}
+
+.restaurantpage .allinfo {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.restaurantpage .allinfo .infotext {
+  text-align: left;
 }
 
 .restaurantpage img {
@@ -303,6 +333,10 @@ button {
 .restaurantpage h1 {
   text-align: center;
   margin-bottom: 0;
+}
+
+.restaurantpage p {
+  line-height: 1.4em;
 }
 
 .ResultCard {
@@ -354,19 +388,33 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar img {
+  width: 30px;
+  height: 30px;
 }
 
 .navbar a {
   width: 100%;
   text-align: center;
+  padding-top: 2.5%;
+  padding-bottom: 1%;
 }
 
 .navbar .active {
   background-color: #b86433;
+  padding-top: 2.5%;
+  padding-bottom: 1%;
 }
 
 .navbar div {
   width: 100%;
   text-align: center;
+  padding-top: 2.5%;
+  padding-bottom: 1%;
 }
 /*# sourceMappingURL=style.css.map */

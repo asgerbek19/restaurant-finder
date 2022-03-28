@@ -1,16 +1,29 @@
 import ResultCard from "../components/ResultCard";
-import {restaurants} from "../steder";
+import { restaurantsRef } from "../firebase-config";
 import SearchBar from "../components/SearchBar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { onSnapshot, orderBy, query } from "@firebase/firestore";
 
 export default function ResultsPage(){
+  
     const [searchValue, setSearchValue] = useState("");
+    const [restaurants, setRestaurants] = useState([]);
     const filteredRestaurants = restaurants.filter(restaurant => restaurant.location.includes(localStorage.getItem("city")));
     const searchedRestaurants= filteredRestaurants.filter(restaurant=> restaurant.info.toLowerCase().includes(searchValue) || restaurant.name.toLowerCase().includes(searchValue) || restaurant.desc.toLowerCase().includes(searchValue));
 const navigate = useNavigate();
 
-
+useEffect(()=>{
+    const q = query(restaurantsRef, orderBy("name", "desc")); // order by: lastest post first
+    const unsubscribe = onSnapshot(q, data => {
+        const restaurantsData = data.docs.map(doc => {
+            // map through all docs (object) from post collection
+            return { ...doc.data(), id: doc.id }; // changing the data structure so it's all gathered in one object
+        });
+        setRestaurants(restaurantsData);
+    });
+    return () => unsubscribe(); // tell the post component to unsubscribe from listen on changes from firestore
+}, []);
 
     return(
         <div className="resultspage">

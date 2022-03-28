@@ -7,7 +7,7 @@ export default function WelcomePage(){
         <div className="welcomepage">
 <img className="welcomepagelogo"src={logo} alt="Muncho Logo"/>
 <h2>Opdag spændende og unikke
-restauranter</h2>
+restauranter og caféer</h2>
 <div className="btn-flex">
 <Link to="/opret-bruger" className="btn">Opret Bruger</Link>
 <Link to="/log-ind" className="btn">Log Ind</Link>

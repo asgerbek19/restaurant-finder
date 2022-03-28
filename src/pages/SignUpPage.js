@@ -17,7 +17,7 @@ const navigate = useNavigate();
     <img src={logo} alt="Muncho Logo" className="onboardinglogo"/>
             <h1>Opret bruger</h1>
             <SignUpForm />
-            <div className="userredirect"> Har du allerede en bruger? <Link to="/log-ind">Log Ind her</Link></div>
+            <div className="userredirect"> Har du allerede en bruger? <Link to="/log-ind">Log ind her</Link></div>
         </div>
     )
 }

@@ -9,10 +9,12 @@ body {
 h1 {
   font-family: rustica, sans-serif;
   color: white;
+  text-align: center;
 }
 h2 {
   font-family: rustica, sans-serif;
   color: white;
+  text-align: center;
 }
 h3 {
   font-family: rustica, sans-serif;
@@ -41,4 +43,9 @@ button {
   color: white;
   text-decoration: none;
   text-align: center;
+}
+
+svg {
+  margin-top: 2%;
+  margin-left: 2%;
 }
