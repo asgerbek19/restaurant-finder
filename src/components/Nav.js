@@ -1,9 +1,9 @@
 import { getAuth,signOut } from "firebase/auth";
 import { NavLink } from "react-router-dom";
-import homeicon from "../images/homeicon.png";
-import likeicon from "../images/likeicon.png";
-import staricon from "../images/staricon.png";
-import logout from "../images/logout.png"
+import homeicon from "../images/homeicon-w.png";
+import likeicon from "../images/likeicon-w.png";
+import staricon from "../images/staricon-w.png";
+import logout from "../images/logout-w.png"
 
 
 export default function Nav() {
