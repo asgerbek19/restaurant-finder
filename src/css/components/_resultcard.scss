@@ -1,16 +1,26 @@
+// Daníel, Mikkel, Stefanos
+
 .ResultCard {
   background: rgba(0, 0, 0, 0.75);
+  border-bottom: solid #fff 1px;
+
   h2 {
     font-size: 2em;
     text-align: center;
+    padding-top: 3.3%;
+    padding-bottom: 2%;
+    margin-top: 12.5%;
+    margin-bottom: 0;
+    border-top: solid #fff 1px;
+    font-weight: lighter;
   }
   p {
-    margin: 0.25em;
     text-align: center;
   }
   .restaurantimage {
     height: 20vh;
     width: 90%;
+    margin: 0 auto;
   }
   img {
     width: 100%;
@@ -18,11 +28,44 @@
     object-fit: cover;
     border-radius: 8px;
   }
-
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+  }
   .btnandimage {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
-    align-items: center;
+  }
+  svg {
+    margin: 0;
+  }
+  .heart-button {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: rustica, sans-serif;
+    background-color: transparent;
+    border-radius: 24px;
+    padding: 0.333em 1em 0.25em;
+    margin: 0;
+    cursor: pointer;
+    transition: color 150ms ease-in-out, background-color 150ms ease-in-out,
+      transform 150ms ease-in-out;
+    outline: 0;
+    &:active {
+      transform: scale(0.95);
+    }
+    &.selected {
+      color: #e64c4c;
+      border-color: white;
+    }
+
+    .heart-icon {
+      display: inline-block;
+      fill: currentColor;
+      width: 0.8em;
+      height: 0.8em;
+    }
   }
 }

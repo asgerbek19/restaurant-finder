@@ -31,26 +31,6 @@ navigate("/resultater");
           <label>
           <input
             type="radio"
-            value="aarhus"
-            checked={city === 'aarhus'}
-            onChange={handleChange}
-          /> Aarhus
-          </label>
-        </div>
-        <div className="radio-btn">
-          <label>
-          <input
-            type="radio"
-            value="odense"
-            checked={city === 'odense'}
-            onChange={handleChange}
-          /> Odense
-          </label>
-        </div>
-        <div className="radio-btn">
-          <label>
-          <input
-            type="radio"
             value="aalborg"
             checked={city === 'aalborg'}
             onChange={handleChange}
@@ -61,10 +41,30 @@ navigate("/resultater");
           <label>
           <input
             type="radio"
+            value="aarhus"
+            checked={city === 'aarhus'}
+            onChange={handleChange}
+          /> Aarhus
+          </label>
+        </div>
+        <div className="radio-btn">
+          <label>
+          <input
+            type="radio"
             value="koebenhavn"
             checked={city === 'koebenhavn'}
             onChange={handleChange}
           /> København
+          </label>
+        </div>
+        <div className="radio-btn">
+          <label>
+          <input
+            type="radio"
+            value="odense"
+            checked={city === 'odense'}
+            onChange={handleChange}
+          /> Odense
           </label>
         </div>
         <button>Søg</button>

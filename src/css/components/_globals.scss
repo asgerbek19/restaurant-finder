@@ -1,3 +1,7 @@
+// Mikkel,Daníel
+
+// #942017
+
 html {
   margin: 0;
   height: 100%;
@@ -10,22 +14,28 @@ h1 {
   font-family: rustica, sans-serif;
   color: white;
   text-align: center;
+  font-weight: normal;
+  font-size: 2em;
 }
 h2 {
   font-family: rustica, sans-serif;
   color: white;
   text-align: center;
+  font-weight: normal;
+  font-size: 1.6em;
 }
 h3 {
   font-family: rustica, sans-serif;
   color: white;
+  font-weight: normal;
+  font-size: 1em;
 }
 p {
   font-family: rustica, sans-serif;
   color: white;
 }
 button {
-  background-color: rgba(148, 32, 23, 1);
+  background-color: #98341f;
   margin: 2%;
   padding: 2%;
   width: 25%;
@@ -33,16 +43,18 @@ button {
   text-decoration: none;
   text-align: center;
   border: none;
+  border-radius: 12px;
 }
 .btn {
-  background-color: rgba(148, 32, 23, 1);
+  background-color: #98341f;
   font-family: rustica, sans-serif;
-  margin: 2%;
+  margin: 2.5%;
   padding: 2%;
   width: 25%;
   color: white;
   text-decoration: none;
   text-align: center;
+  border-radius: 12px;
 }
 
 svg {

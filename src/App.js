@@ -8,14 +8,15 @@ import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
 import ResultsPage from "./pages/ResultsPage";
 import PreferencePage from "./pages/PreferencePage";
-import BestRatedPage from "./pages/BestRatedPage";
 import RestaurantPage from "./pages/RestaurantPage";
 import AboutPage from "./pages/AboutPage";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { usersRef } from "./firebase-config";
 import { useState } from "react";
+import ArticlePage1 from "./pages/ArticlePage1";
+import ArticlePage2 from "./pages/ArticlePage2";
 
-
+//
+// Daníel, Mikkel, Stefanos
 
 function App() {
    const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -34,18 +35,21 @@ function App() {
 
    // variable holding all private routes including the nav bar
    const privateRoutes = (
-      <div>
+      <div >
+      
          <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/praeferencer" element={<PreferencePage />} />
             <Route path="/resultater" element={<ResultsPage />} />
             <Route path="/gemte" element={<FavoritedPage/>}/>
-            <Route path="/bedst-bedoemte" element={<BestRatedPage/>}/>
             <Route path="/restaurant/:slug" element={<RestaurantPage/>}/>
             <Route path="/om-os" element={<AboutPage />}/>
+            <Route path="/artikel-1" element={<ArticlePage1/>}/>
+            <Route path="/artikel-2" element={<ArticlePage2 />}/>
             <Route path="*" element={<Navigate to="/" />} />
          </Routes>
          <Nav />
+       
       </div>
    );
    // variable holding all public routes without nav bar

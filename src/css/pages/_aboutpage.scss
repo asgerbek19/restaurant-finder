@@ -1,0 +1,19 @@
+//stefanos
+
+.aboutpage {
+  background-image: url(../images/welcomepagebackground.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 100%;
+  height: 100vh;
+
+  .about-text {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  p {
+    line-height: 1.6em;
+    padding: 5%;
+  }
+}

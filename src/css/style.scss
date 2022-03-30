@@ -1,6 +1,7 @@
+// Global
 @import "./components/globals";
 
-//Pages
+// Pages
 @import "./pages/welcomepage";
 
 @import "./pages/homepage";
@@ -13,7 +14,13 @@
 
 @import "./pages/restaurantpage";
 
-//Components
+@import "./pages/favoritedpage";
+
+@import "./pages/aboutpage";
+
+@import "./pages/articlepage";
+
+// Components
 @import "./components/resultcard";
 
 @import "./components/nav";

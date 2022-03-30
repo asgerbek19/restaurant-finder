@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import logo from "../images/logo.png";
+import infoicon from "../images/infoicon-w.png"
 
 export default function WelcomePage(){
+const navigate = useNavigate();
 
+function handleNavigate(event){
+    event.preventDefault();
+    navigate("/om-os");
+};
     return(
         <div className="welcomepage">
 <img className="welcomepagelogo"src={logo} alt="Muncho Logo"/>
@@ -11,6 +17,7 @@ restauranter og caféer</h2>
 <div className="btn-flex">
 <Link to="/opret-bruger" className="btn">Opret Bruger</Link>
 <Link to="/log-ind" className="btn">Log Ind</Link>
+<img onClick={handleNavigate} src={infoicon} alt="Om Munch'o"/>
 </div>
 </div>
     )

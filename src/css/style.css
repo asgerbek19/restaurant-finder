@@ -12,17 +12,23 @@ h1 {
   font-family: rustica, sans-serif;
   color: white;
   text-align: center;
+  font-weight: normal;
+  font-size: 2em;
 }
 
 h2 {
   font-family: rustica, sans-serif;
   color: white;
   text-align: center;
+  font-weight: normal;
+  font-size: 1.6em;
 }
 
 h3 {
   font-family: rustica, sans-serif;
   color: white;
+  font-weight: normal;
+  font-size: 1em;
 }
 
 p {
@@ -31,7 +37,7 @@ p {
 }
 
 button {
-  background-color: #942017;
+  background-color: #98341f;
   margin: 2%;
   padding: 2%;
   width: 25%;
@@ -39,21 +45,23 @@ button {
   text-decoration: none;
   text-align: center;
   border: none;
+  border-radius: 12px;
 }
 
 .btn {
-  background-color: #942017;
+  background-color: #98341f;
   font-family: rustica, sans-serif;
-  margin: 2%;
+  margin: 2.5%;
   padding: 2%;
   width: 25%;
   color: white;
   text-decoration: none;
   text-align: center;
+  border-radius: 12px;
 }
 
 svg {
-  margin-top: 2%;
+  margin-top: 3%;
   margin-left: 2%;
 }
 
@@ -72,8 +80,7 @@ svg {
   width: 75%;
   margin-left: 12.5%;
   margin-right: 12.5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 18%;
 }
 
 .welcomepage .btn-flex {
@@ -93,6 +100,12 @@ svg {
           align-items: center;
 }
 
+.welcomepage img {
+  width: 8%;
+  height: auto;
+  margin-top: 2.5%;
+}
+
 .homepage {
   width: 100%;
   height: 100%;
@@ -107,8 +120,9 @@ svg {
 .homepage .munchologo {
   width: 75%;
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 10%;
+  z-index: 1;
 }
 
 .homepage button {
@@ -116,13 +130,49 @@ svg {
   font-size: 1.4em;
   position: absolute;
   left: 28%;
-  top: 40%;
+  top: 31%;
   padding-top: 3%;
   padding-bottom: 3%;
+  z-index: 1;
+}
+
+.homepage .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 28vh;
+}
+
+.homepage .articles .article {
+  width: 50%;
+}
+
+.homepage .articles img {
+  width: 100%;
+}
+
+.homepage .articles h3 {
+  width: 40%;
+}
+
+.homepage .articles .firstarticleheadline {
+  position: absolute;
+  top: 28%;
+  left: 5%;
+}
+
+.homepage .articles .secondarticleheadline {
+  position: absolute;
+  top: 28%;
+  right: 5%;
 }
 
 .onboarding {
-  background-color: #942017;
+  background-color: #98341f;
   height: 100vh;
 }
 
@@ -223,15 +273,17 @@ svg {
   position: relative;
 }
 
-.preferencepage h2 {
+.preferencepage h1 {
   font-weight: lighter;
   text-align: center;
+  margin: 0 auto;
 }
 
 .preferencepage .preference-center {
   position: absolute;
-  top: 20%;
+  top: 28%;
   width: 100%;
+  padding-bottom: 10%;
 }
 
 .preferencepage .preferenceform {
@@ -240,16 +292,17 @@ svg {
 }
 
 .preferencepage .radio-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-family: rustica, sans-serif;
-  font-size: 2em;
+  font-size: 1.6em;
+  margin-top: 15%;
 }
 
 .preferencepage label {
-  margin: 0 auto;
+  color: #fff;
   width: 100%;
 }
 
@@ -272,9 +325,11 @@ svg {
 
 .preferencepage button {
   display: block;
-  margin: 10% auto;
-  padding: 2% 15% 2% 15%;
-  width: inherit;
+  margin-top: 15%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 1.4em;
+  width: 91.2%;
 }
 
 .resultspage {
@@ -284,7 +339,7 @@ svg {
   background-position: top;
   min-height: 100%;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 48px;
 }
 
 .resultspage .searchbar-container {
@@ -339,23 +394,95 @@ svg {
   line-height: 1.4em;
 }
 
+.favoritedpage {
+  width: 100%;
+  background: url(../images/welcomepagebackground.png);
+  background-size: contain;
+  background-position: top;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 48px;
+}
+
+.aboutpage {
+  background-image: url(../images/welcomepagebackground.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 100%;
+  height: 100vh;
+}
+
+.aboutpage .about-text {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.aboutpage p {
+  line-height: 1.6em;
+  padding: 5%;
+}
+
+.articlepage {
+  padding-bottom: 60px;
+}
+
+.articlepage .restaurantimage {
+  height: 20vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.articlepage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.articlepage h2 {
+  text-decoration: underline;
+  margin-bottom: 1%;
+  margin-top: 5%;
+  border-top: solid #98341f 1px;
+}
+
+.articlepage h3 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1%;
+}
+
+.articlepage p {
+  width: 75%;
+  font-size: 1.25em;
+  margin: 5% auto;
+}
+
 .ResultCard {
   background: rgba(0, 0, 0, 0.75);
+  border-bottom: solid #fff 1px;
 }
 
 .ResultCard h2 {
   font-size: 2em;
   text-align: center;
+  padding-top: 3.3%;
+  padding-bottom: 2%;
+  margin-top: 12.5%;
+  margin-bottom: 0;
+  border-top: solid #fff 1px;
+  font-weight: lighter;
 }
 
 .ResultCard p {
-  margin: 0.25em;
   text-align: center;
 }
 
 .ResultCard .restaurantimage {
   height: 20vh;
   width: 90%;
+  margin: 0 auto;
 }
 
 .ResultCard img {
@@ -366,22 +493,66 @@ svg {
   border-radius: 8px;
 }
 
+.ResultCard .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 2%;
+}
+
 .ResultCard .btnandimage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.ResultCard svg {
+  margin: 0;
+}
+
+.ResultCard .heart-button {
+  color: #fff;
+  font-size: 1.5em;
+  font-family: rustica, sans-serif;
+  background-color: transparent;
+  border-radius: 24px;
+  padding: 0.333em 1em 0.25em;
+  margin: 0;
+  cursor: pointer;
+  -webkit-transition: color 150ms ease-in-out, background-color 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out, transform 150ms ease-in-out;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out, transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  outline: 0;
+}
+
+.ResultCard .heart-button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.ResultCard .heart-button.selected {
+  color: #e64c4c;
+  border-color: white;
+}
+
+.ResultCard .heart-button .heart-icon {
+  display: inline-block;
+  fill: currentColor;
+  width: 0.8em;
+  height: 0.8em;
 }
 
 .navbar {
-  background-color: #942017;
+  background-color: #98341f;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -391,6 +562,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: solid #000 2px;
 }
 
 .navbar img {
