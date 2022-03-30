@@ -20,6 +20,7 @@ import { useState } from "react";
 function App() {
    const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
    const auth = getAuth();
+   
   
    onAuthStateChanged(auth, (user) => {
       if (user) {

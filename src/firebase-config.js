@@ -20,3 +20,4 @@ const db = getFirestore(firebaseApp);
 
 export const usersRef = collection(db, "users");
 export const restaurantsRef = collection(db, "restaurants");
+export const favsRef = collection(db, "favorites");

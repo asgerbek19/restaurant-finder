@@ -1,4 +1,7 @@
+import { doc, setDoc } from "@firebase/firestore";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth"
+import { usersRef } from "../firebase-config";
+
 
 
 export default function SignUpForm() {
@@ -9,11 +12,17 @@ function signUp(event){
 const email = event.target.email.value;
 const password = event.target.password.value;
 createUserWithEmailAndPassword(auth, email, password)
-.then((userCredential)=>{
+.then((userCredential)=> {
     //Signed in
     const user = userCredential.user;
-    console.log(user);
+    const docRef = doc(usersRef, user.uid);
+    setDoc(docRef, {email});
 })
+.catch((error) => {
+    if (error.code === "auth/email-already-in-use") {
+        alert("Denne email er allerede i brug");
+    } 
+  });
 }
     return (
         <div>
