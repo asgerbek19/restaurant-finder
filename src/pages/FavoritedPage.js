@@ -67,7 +67,6 @@ export default function FavoritedPage(){
             </svg>
         </div>
         <h1>Gemt</h1>
-        <p className="intet-gemt">Du har ikke gemt noget indhold endnu</p>
         {favPosts.map(restaurant=>(
         <ResultCard restaurant={restaurant} key={restaurant.id} />        
         ))}
