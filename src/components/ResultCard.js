@@ -1,4 +1,4 @@
-//Daniel og Stefanos
+// Daniel og Stefanos
 import { arrayRemove, arrayUnion, doc, onSnapshot, updateDoc } from "@firebase/firestore";
 import { getAuth } from "firebase/auth";
 import {useNavigate} from "react-router-dom";
@@ -56,10 +56,19 @@ async function handleAddToFav(){
             
             
             {user.favorites?.includes(restaurant.id) ? (
-                <button className="heart-button selected" onClick={handleRemoveFromFav}><svg className="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M91.6 13A28.7 28.7 0 0 0 51 13l-1 1-1-1A28.7 28.7 0 0 0 8.4 53.8l1 1L50 95.3l40.5-40.6 1-1a28.6 28.6 0 0 0 0-40.6z"/></svg></button>
+                  <button className="heart-button selected" onClick={handleRemoveFromFav}>
+                  <svg className="heart-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#98341f"  viewBox="0 0 16 16">
+                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+              </svg>
+              </button>
             ) : (
-                <button className="heart-button" onClick={handleAddToFav}><svg className="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M91.6 13A28.7 28.7 0 0 0 51 13l-1 1-1-1A28.7 28.7 0 0 0 8.4 53.8l1 1L50 95.3l40.5-40.6 1-1a28.6 28.6 0 0 0 0-40.6z"/></svg></button>
+                <button className="heart-button" onClick={handleAddToFav}>
+                <svg className="heart-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fff"  viewBox="0 0 16 16">
+              <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+            </svg>
+            </button>
             )}
+         
             </div>
             </div>
             </div>

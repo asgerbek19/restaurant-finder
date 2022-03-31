@@ -1,3 +1,4 @@
+//Daníel
 import { doc, setDoc } from "@firebase/firestore";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth"
 import { usersRef } from "../firebase-config";
@@ -31,7 +32,7 @@ createUserWithEmailAndPassword(auth, email, password)
                 <input type="text" name="email" id="email" placeholder="Indtast din e-mail"></input>
                 <label>Password</label>
                 <input type="password" name="password" id="password" placeholder="Indtast dit ønskede password"></input>
-                <button>Opret Bruger</button>
+                <button>Opret bruger</button>
             </form>
         </div>
     )

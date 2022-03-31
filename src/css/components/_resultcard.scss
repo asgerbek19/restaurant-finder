@@ -2,7 +2,7 @@
 
 .ResultCard {
   background: rgba(0, 0, 0, 0.75);
-  border-bottom: solid #fff 1px;
+  border-bottom: solid #98341f 1px;
 
   h2 {
     font-size: 2em;
@@ -11,11 +11,14 @@
     padding-bottom: 2%;
     margin-top: 12.5%;
     margin-bottom: 0;
-    border-top: solid #fff 1px;
+    border-top: solid #98341f 1px;
     font-weight: lighter;
   }
   p {
     text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .restaurantimage {
     height: 20vh;
@@ -57,7 +60,7 @@
       transform: scale(0.95);
     }
     &.selected {
-      color: #e64c4c;
+      color: #98341f;
       border-color: white;
     }
 

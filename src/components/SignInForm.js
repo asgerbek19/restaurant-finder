@@ -1,3 +1,4 @@
+//Daníel
 import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
 
 export default function SignInForm(){
@@ -21,7 +22,7 @@ return(
         <input type="text" name="email" id="email" placeholder="Indtast din e-mail"></input>
         <label>Password</label>
         <input type="password" name="password" id="password" placeholder="Indtast dit password"></input>
-        <button>Log Ind</button>
+        <button>Log ind</button>
     </form>
 </div>
 );

@@ -20,6 +20,7 @@ function navigateToArticle2(event){
     navigate("/artikel-2")
 }
     return(
+        
         <div className="homepage" >
         <img src={logo} alt="Munch'o Logo" className="munchologo"/>
         <button onClick={handleNavigate}>Opdag</button>

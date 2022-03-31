@@ -1,3 +1,5 @@
+// Daníel, Mikkel, Stefanos
+
 import "./css/style.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Nav from "./components/Nav";
@@ -14,9 +16,9 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useState } from "react";
 import ArticlePage1 from "./pages/ArticlePage1";
 import ArticlePage2 from "./pages/ArticlePage2";
+import ForceToMobile from "./components/ForceToMobile";
 
-//
-// Daníel, Mikkel, Stefanos
+
 
 function App() {
    const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -36,7 +38,7 @@ function App() {
    // variable holding all private routes including the nav bar
    const privateRoutes = (
       <div >
-      
+      <ForceToMobile/>
          <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/praeferencer" element={<PreferencePage />} />
@@ -55,6 +57,7 @@ function App() {
    // variable holding all public routes without nav bar
    const publicRoutes = (
       <>
+      <ForceToMobile/>
          <Routes>
             <Route path="/" element={<WelcomePage/>}/>
             <Route path="/log-ind" element={<SignInPage />} />

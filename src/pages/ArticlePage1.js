@@ -6,7 +6,7 @@ export default function ArticlePage1() {
     const navigate = useNavigate();
     return(
         <div className="articlepage">
-            <div onClick={() => navigate(-1)}>
+            <div className="backarrow" onClick={() => navigate(-1)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="43.459" height="41.069" viewBox="0 0 43.459 41.069">
                 <g id="Polygon_2" data-name="Polygon 2" transform="translate(43.459 23.407) rotate(148)" fill="#fff">
                 <path d="M 33.38788223266602 26.80785751342773 L 0.90433669090271 26.80785751342773 L 17.14610481262207 0.9402873516082764 L 33.38788223266602 26.80785751342773 Z" stroke="none"/>
@@ -39,7 +39,7 @@ export default function ArticlePage1() {
             <p>Ønsker De at invitere deres udkårne på en romantisk middag, går du ikke galt i byen her. Hos Blue Elephant træder de ind i en helt anden verden med grønne planter, små rislende vandfald og levende lyd på bordene. Så hvis du ønsker en aften med alt gode fra det thailandske køkken, vil en aften hos Blue Elephant i de smukke omgivelser, tage dig med en tur til Thailand.</p>
             </article>
             <article>
-            <h2>Ålborg</h2>
+            <h2>Aalborg</h2>
             <h3>Restaurant Rusk </h3>
             <div className="restaurantimage">
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/4f/ce/f9/photo0jpg.jpg" alt="Restaurant Rusk" />
